@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-let Issue = new Schema({
+let Todo = new Schema({
     title: {
         type: String
     },
@@ -22,4 +22,4 @@ let Issue = new Schema({
     }
 });
 
-export default mongoose.model('Issue', Issue);
+export default mongoose.model('Todo', Todo);

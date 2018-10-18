@@ -1,0 +1,21 @@
+<br><br>
+<h1> Welcome to your Todo App</h1>
+<div style="  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  height: 500px;"><br><br><br><br>
+<div style="border:2px solid rgba(75, 75, 75, 0.2); border-radius: 10px; padding: 10px; 
+background-color: rgba(255, 255, 255, 0.5);">
+    <form [formGroup]="homeForm" class="home-form">
+      <label for="username">Enter your username:</label>
+      <input name="username" placeholder="Username" formControlName="username" #username><br><br>
+      <button type="submit" (click)="checkUser(username.value)" [disabled]="homeForm.pristine || homeForm.invalid" color="primary">Go</button>
+      <button type="submit" (click)="createNewUser(username.value)" [disabled]="homeForm.pristine || homeForm.invalid" color="primary">Create new user</button>
+    </form>
+</div><br>
+<h4>(Click on Go if you're an existing user)</h4>
+</div>

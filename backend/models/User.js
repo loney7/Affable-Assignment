@@ -7,7 +7,7 @@ let User = new Schema({
         type: String,
         unique: true
     },
-    tasks: [{ type: Schema.Types.ObjectId, ref: 'Issue' }]
+    tasks: [{ type: Schema.Types.ObjectId, ref: 'Todo' }]
 });
 
 export default mongoose.model('User', User);

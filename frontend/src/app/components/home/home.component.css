@@ -1,0 +1,89 @@
+.home-form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    border-bottom: 2px dashed rgb(75, 75, 75, 0.5);
+    outline: none;
+    border-radius: 0;
+    text-align: center;
+    background: none;
+    font-weight: 700;
+    font-family: 'Lato', georgia;
+    font-size: 25px;
+    color: rgb(75, 75, 75);
+    max-width: 90%;
+    padding: 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-sizing: border-box;
+    cursor: text;
+    margin: 10px;
+  }
+  
+  input:required {
+    border-bottom: 2px dashed rgb(75, 75, 75, 0.5);
+  }
+  
+  input:focus {
+    border-bottom: 2px dashed rgb(75, 75, 75);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  input:required:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  input:required:invalid {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(75, 75, 75, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  :-ms-input-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  label {
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+  }
+
+  button {
+      margin: 15px;
+      background: transparent;
+      border: 1px solid rgb(75, 75, 75);
+      color:rgb(75, 75, 75);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+  }
+
+  button:disabled {
+    border: 1px solid rgb(75, 75, 75, 0.5);
+    color: rgba(75, 75, 75, 0.5);
+  }
+
+  button:disabled:hover {
+      cursor: not-allowed;
+  }
+  
+  h4 {
+      color: white;
+      margin-top: 5px;
+       display: block;
+       opacity: 0.6;
+  }

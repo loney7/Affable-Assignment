@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
-import Issue from './models/Issue';
+import Todo from './models/Todo';
 import User from './models/User'
 
 const app = express();
@@ -12,7 +12,7 @@ const router = express.Router();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/issues');
+mongoose.connect('mongodb://localhost:27017/todos');
 
 const connection = mongoose.connection;
 
@@ -48,32 +48,32 @@ router.route('/users/:username').get((req, res) => {
     });
 });
 
-// Get issue by id
-router.route('/issues/:id').get((req, res) => {
-    Issue.findById(req.params.id, (err, issue) => {
+// Get todo by id
+router.route('/todos/:id').get((req, res) => {
+    Todo.findById(req.params.id, (err, todo) => {
         if (err)
             console.log(err);
         else
-            res.json(issue);
+            res.json(todo);
     });
 });
 
-//add new issue for user
-router.route('/addissue').post((req, res) => {
-    let issue = new Issue();
-    issue.title = req.body.title;
-    issue.description = req.body.description;
-    issue.severity = req.body.severity;
-    issue.order = req.body.order;
-    let issueId = issue._id;
-    issue.save();
+//add new todo for user
+router.route('/addtodo').post((req, res) => {
+    let todo = new Todo();
+    todo.title = req.body.title;
+    todo.description = req.body.description;
+    todo.severity = req.body.severity;
+    todo.order = req.body.order;
+    let todoId = todo._id;
+    todo.save();
 
     User.findById(req.body.userid, (err, user) => {
         if(!user)
             return next(new Error('Could not find user'));
         else {
             let task = user.tasks;
-            task.push(issueId);
+            task.push(todoId);
 
             User.update(
                 {_id: req.body.userid},
@@ -93,19 +93,19 @@ router.route('/addissue').post((req, res) => {
 });
 
 // edit task
-router.route('/issues/update/:id').post((req, res) => {
-    Issue.findById(req.params.id, (err, issue) => {
-        if (!issue)
+router.route('/todos/update/:id').post((req, res) => {
+    Todo.findById(req.params.id, (err, todo) => {
+        if (!todo)
             return next(new Error('Could not load document'));
         else {
             console.log(req.body);
-            issue.title = req.body.title;
-            issue.description = req.body.description;
-            issue.severity = req.body.severity;
-            issue.status = req.body.status;
-            issue.order = req.body.order;
+            todo.title = req.body.title;
+            todo.description = req.body.description;
+            todo.severity = req.body.severity;
+            todo.status = req.body.status;
+            todo.order = req.body.order;
 
-            issue.save().then(issue => {
+            todo.save().then(todo => {
                 res.json('Update done');
             }).catch(err => {
                 res.status(400).send('Update failed');
@@ -114,8 +114,8 @@ router.route('/issues/update/:id').post((req, res) => {
     });
 });
 
-router.route('/issues/delete/:id/:userid').get((req, res) => {
-    Issue.findByIdAndRemove({_id: req.params.id}, (err, issue) => {
+router.route('/todos/delete/:id/:userid').get((req, res) => {
+    Todo.findByIdAndRemove({_id: req.params.id}, (err, todo) => {
         if (err)
             console.log(err);
         else {

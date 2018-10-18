@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+button {
+    margin: 10px;
+}
+  
+  .mat-table {
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .mat-table td {
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 1.4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding-left: 24px;
+  }
+
+  .mat-table th {
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 1.4;
+    border-bottom: 1px solid rgb(61, 60, 60, 0.4);
+    text-align: center;
+  }
+  
