@@ -30,18 +30,27 @@ Download the installer for your operating system.
 
 
 I have added all the dependencies within the package.json file. 
-Navigate to the frontend folder
+Navigate to the frontend folder.
+
 Run the command:
+
+
 
 ```sudo npm install```
 
+
+<br>
+
 Navigate to the backend folder
+
 Run the command:
+
 ```sudo npm install```
 
 This will update any packages or install them again if needed.
 
-So to quickly run the project
+
+###So to quickly run the project.
 
 
 Navigate to the project folder
@@ -108,7 +117,7 @@ Now we need to add a .babelrc file to the project and add the content:
 ```
 We use babel-watch to ensure that the Node.js web server process is restarted whenever the code changes. Now, we would add a dependency for babel-watch
 
-$ npm install babel-watch --save-dev
+```$ npm install babel-watch --save-dev```
 
 Now we would add in scripts section in package.json:
 ```
@@ -119,16 +128,16 @@ Now we would add in scripts section in package.json:
 
 This makes sure that we are ready to use the babel compiler for our project.
 
-Installing Express
+### Installing Express
 Because we’d like to use the Express framework for implementing the server we’re installing the corresponding package first:
 
 ```$ npm install express```
 
-Furthermore we need to make sure that the mongoose library is available, so that we’re able to use that library to access the MongoDB database:
+### Furthermore we need to make sure that the mongoose library is available, so that we’re able to use that library to access the MongoDB database:
 
 ```$ npm install mongoose```
 
-Installing the cors package too
+### Installing the cors package too
 
 ```$ npm install cors```
 
