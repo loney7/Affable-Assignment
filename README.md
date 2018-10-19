@@ -153,4 +153,17 @@ This should setup your backend from the scratch.
 Hopefully you should be able to run your project after this.
 
 
+# Major Scenarios/Tests
+
+* 1. If user already exists : clicking create a new user should display an error message 'user exists'
+* 2. If user does not exist : create a user should work.
+* 3. If user does not exist : clicking go should display a an error message 'User does not exist'.
+* 4. Once we are scoped in to a user the following should work as expected:
+  - add a todo
+  - edit a todo
+  - delete a todo
+
+
+
+
 
