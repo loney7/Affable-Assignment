@@ -4,6 +4,13 @@ Problem Statement:
 https://www.notion.so/Software-Engineering-Task-9e4f04880e194851a244f4144cc92476
 
 
+![alt text](https://github.com/loney7/Affable-Assignment/blob/master/pic%201.png)
+
+![alt text](https://github.com/loney7/Affable-Assignment/blob/master/pic%202.png)
+
+![alt text](https://github.com/loney7/Affable-Assignment/blob/master/pic%203.png)
+
+
 Local Machine Setup;
 
 We need to install Node.js and Angular CLI on the system.
@@ -55,15 +62,14 @@ You should get something similar to this in your terminal
 ```
 
 
-### Backend
-Open a new terminal window
-
+## Backend
+Open a new terminal window.
 Navigate to the backend directory
-and type the command
+and type the command.
 
 ```npm run dev```
 
-### Frontend
+## Frontend
 
 Open a new terminal window
 
@@ -80,7 +86,7 @@ http://localhost:4200
 # For some reason if the setup does not work, let us setup everything from the scratch
 
 
-### Setting up the backend
+## Setting up the backend
 
 Navigate to the root directory of the project using the terminal.
 
@@ -90,7 +96,7 @@ Type the command
 Make sure you are inside the backend directory noew.
 
 
-#### How to setup babel
+## How to setup babel
 ```npm install --save-dev babel-cli babel-preset-env```
 
 Now we need to add a .babelrc file to the project and add the content:
