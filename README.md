@@ -30,7 +30,7 @@ Download the installer for your operating system.
 
 
 I have added all the dependencies within the package.json file. 
-Navigate to the frontend folder.
+### Navigate to the frontend folder.
 
 Run the command:
 
@@ -40,12 +40,18 @@ Run the command:
 
 
 <br>
+<br>
+<br>
 
-Navigate to the backend folder
+### Navigate to the backend folder
+
+
 
 Run the command:
 
 ```sudo npm install```
+
+
 
 This will update any packages or install them again if needed.
 
