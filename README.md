@@ -71,7 +71,7 @@ Now type the command
 
 This would setup the mongod database
 
-You should get something similar to this in your terminal
+You should get something similar to this in your terminal.
 ```
 2018-10-19T17:58:52.736+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
 ```
@@ -108,7 +108,7 @@ Navigate to the root directory of the project using the terminal.
 Type the command
 ```cd backend```
 
-Make sure you are inside the backend directory noew.
+Make sure you are inside the backend directory now.
 
 
 ## How to setup babel
