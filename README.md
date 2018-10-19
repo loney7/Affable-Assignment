@@ -50,7 +50,7 @@ Run the command:
 This will update any packages or install them again if needed.
 
 
-###So to quickly run the project.
+### So to quickly run the project.
 
 
 Navigate to the project folder
