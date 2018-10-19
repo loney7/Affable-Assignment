@@ -11,7 +11,7 @@ https://www.notion.so/Software-Engineering-Task-9e4f04880e194851a244f4144cc92476
 ![alt text](https://github.com/loney7/Affable-Assignment/blob/master/pic%203.png)
 
 
-Local Machine Setup;
+#Local Machine Setup:
 
 We need to install Node.js and Angular CLI on the system.
 Clone or Download this repo.
