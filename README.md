@@ -10,6 +10,7 @@ We need to install Node.js and Angular CLI on the system.
 Clone or Download this repo.
 
 
+
 ### For installing Node.js
 Vist the project’s website at https://nodejs.org/.
 
@@ -21,8 +22,73 @@ Download the installer for your operating system.
 
 
 
+I have added all the dependencies within the package.json file. 
+Navigate to the frontend folder
+Run the command:
+
+```sudo npm install```
+
+Navigate to the backend folder
+Run the command:
+```sudo npm install```
+
+This will update any packages or install them again if needed.
+
+So to quickly run the project
+
+
+Navigate to the project folder
+
+### Setting up the database
+
+``` sudo npm install mongoose```
+
+Now type the command 
+
+```mongod```
+
+This would setup the mongod database
+
+You should get something similar to this in your terminal
+```
+2018-10-19T17:58:52.736+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+```
+
+
+### Backend
+Open a new terminal window
+
+Navigate to the backend directory
+and type the command
+
+```npm run dev```
+
+### Frontend
+
+Open a new terminal window
+
+Navigate to the frontend directory and type the commmad
+
+```ng serve --open```
+
+When you run this command the browser window should open up with the project hosted at
+
+http://localhost:4200
+
+
+
+# For some reason if the setup does not work, let us setup everything from the scratch
+
 
 ### Setting up the backend
+
+Navigate to the root directory of the project using the terminal.
+
+Type the command
+```cd backend```
+
+Make sure you are inside the backend directory noew.
+
 
 #### How to setup babel
 ```npm install --save-dev babel-cli babel-preset-env```
@@ -61,8 +127,9 @@ Installing the cors package too
 ```$ npm install cors```
 
 
+This should setup your backend from the scratch.
 
-
+Hopefully you should be able to run your project after this.
 
 
 
