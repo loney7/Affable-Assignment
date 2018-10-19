@@ -25,7 +25,7 @@ Download the installer for your operating system.
 
 ### Once node is setup, we setup angular CLI
 
-```npm install -g @angular/cl```
+```npm install -g @angular/cli```
 
 
 
