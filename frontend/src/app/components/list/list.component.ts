@@ -5,7 +5,6 @@ import { MatTableDataSource } from '@angular/material';
 import { Todo } from '../../todo.model';
 import { User } from '../../user.model';
 import { TodoService } from '../../todo.service';
-import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-list',
